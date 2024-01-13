@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .musa {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .musa img {
+            width: 100%;
+            height: 100% auto;
+            object-fit: cover;
+        }
+
+        .date {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+
+        .date h1 {
+            font-size: 40px;
+            background: linear-gradient(to bottom, #031321, #14ff27, #740404);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .date h2 {
+            text-align: center;
+            color: white;
+            position: relative;
+            display: inline-block;
+            margin-left: 28%;
+            margin-bottom: 20px;
+        }
+
+        .date h2::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -8px;
+            background: greenyellow;
+            width: 100%;
+            height: 3px;
+        }
+
+        p {
+            font-size: 20px;
+            color: rgb(21, 255, 21);
+            text-align: center;
+        }
+
+        .musa_img {
+            height: auto;
+            width: 400px;
+            margin-top: 40%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .musa_img {
+                margin-top: 100vh;
+                object-fit: cover;
+            }
+
+            .date {
+                transform: translate(-30%, -20%);
+            }
+            .date h1{
+                font-size: 20px;
+            }
+            .date h2{
+                font-size: 20px;
+                margin-left: 20px;
+            }
+            .date p{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="musa">
+        <img src="./IMG_20230802_100654_526.jpg" alt="">
+        <div class="date">
+            <h1>Muhammad Musa</h1>
+            <h2>Date of Birth</h2>
+            <p>2 August 2023</p>
+            <p>18 Muharram 1445</p>
+            <p>14 Srabon 1430</p>
+            <p>Time 9: 20 am</p>
+        </div>
+    </div>
+    <img src="./IMG_20230802_100654_526.jpg" alt="" class="musa_img">
+
+
+
+</body>
+
+</html>
